@@ -2,7 +2,8 @@ import allure
 import requests
 from requests import Response
 
-from src.enum import Endpoints
+from src.base.logs import log
+from src.enums.endpoints import Endpoints
 
 
 class Request:
@@ -12,24 +13,28 @@ class Request:
         self.cookie = cookie
         self.auth = auth
 
-    @allure.step("GET request to:\n{url}")
+    @allure.step("GET request to: {endpoint}")
     def get(self, endpoint, params=None) -> Response:
         url = f'{self.base_url}{endpoint}'
-        print(url)
+        log.save_request(method="POST", url=url, auth=self.auth, headers=self.headers, cookies=self.cookie)
         response = requests.get(url=url, params=params, auth=self.auth, headers=self.headers, cookies=self.cookie)
+        log.save_response(response=response)
         return response
 
-    @allure.step("POST request to:\n{url}")
+    @allure.step("POST request to: {endpoint}")
     def post(self, endpoint, json=None, data=None) -> Response:
         url = f'{self.base_url}{endpoint}'
-        response = requests.post(url=url, auth=self.auth, headers=self.headers, cookies=self.cookie, json=json,
-                                 data=data)
+        log.save_request(method="POST", url=url, auth=self.auth, headers=self.headers, cookies=self.cookie, json=json, data=data)
+        response = requests.post(url=url, auth=self.auth, headers=self.headers, cookies=self.cookie, json=json, data=data)
+        log.save_response(response=response)
         return response
 
-    @allure.step("OPTIONS request to:\n{url}")
+    @allure.step("Requests OPTIONS")
     def options(self) -> Response:
         url = f'{self.base_url}api'
+        log.save_request(method="POST", url=url, auth=self.auth, headers=self.headers, cookies=self.cookie)
         response = requests.options(url=url, auth=self.auth, headers=self.headers, cookies=self.cookie)
+        log.save_response(response=response)
         return response
 
 
