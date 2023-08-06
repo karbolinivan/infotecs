@@ -1,0 +1,5 @@
+APPLICATION
+stdout:
+Запуск Веб-калькулятора на localhost:9999
+Веб-калькулятор запущен на localhost:9999
+stderr:

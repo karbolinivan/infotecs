@@ -1,0 +1,24 @@
+07.08.2023_00:52:21.951521
+REQUEST: POST
+url: http://localhost:9999/api/division
+headers: null
+cookie: None
+data: None
+params: null
+json: {
+  "x": -1,
+  "y": 26
+}
+
+07.08.2023_00:52:23.975497
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 21:52:23 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 0,
+  "result": -1
+}

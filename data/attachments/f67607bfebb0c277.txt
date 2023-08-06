@@ -1,0 +1,4 @@
+APPLICATION
+stdout:
+Сервер уже запущен
+stderr:

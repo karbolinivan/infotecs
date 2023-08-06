@@ -1,0 +1,21 @@
+07.08.2023_00:48:02.946485
+REQUEST: POST
+url: http://localhost:9999/api/state
+headers: null
+cookie: None
+data: None
+params: null
+json: null
+
+07.08.2023_00:48:04.968334
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 21:48:04 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 0,
+  "state": "OК"
+}

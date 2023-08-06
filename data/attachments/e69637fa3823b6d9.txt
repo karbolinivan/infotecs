@@ -1,0 +1,15 @@
+APPLICATION
+stdout:
+usage: webcalculator.exe [-h] {start,stop,restart,show_log} ...
+
+positional arguments:
+  {start,stop,restart,show_log}
+                        Команды сервера
+    start               Запуск сервера. Подробная подсказка: "start -h"
+    stop                Остановка запущенного сервера
+    restart             Перезапуск сервера
+    show_log            Отображает логи сервера
+
+optional arguments:
+  -h, --help            show this help message and exit
+stderr:

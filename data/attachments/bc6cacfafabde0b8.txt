@@ -1,0 +1,21 @@
+07.08.2023_00:48:04.973535
+REQUEST: POST
+url: http://localhost:9999/api/invalid
+headers: null
+cookie: None
+data: None
+params: null
+json: null
+
+07.08.2023_00:48:07.012076
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 21:48:07 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 5,
+  "statusMessage": ": invalid - Не верное имя задачи или тип HTTP запроса"
+}

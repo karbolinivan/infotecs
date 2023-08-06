@@ -1,0 +1,24 @@
+07.08.2023_00:48:15.212841
+REQUEST: POST
+url: http://localhost:9999/api/addition
+headers: null
+cookie: None
+data: None
+params: null
+json: {
+  "x": 10.3645402715058,
+  "y": 59.26511434138591
+}
+
+07.08.2023_00:48:17.259678
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 21:48:17 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 3,
+  "statusMessage": "Значения параметров должны быть целыми"
+}

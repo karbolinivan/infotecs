@@ -1,0 +1,24 @@
+07.08.2023_00:51:53.370716
+REQUEST: POST
+url: http://localhost:9999/api/addition
+headers: null
+cookie: None
+data: None
+params: null
+json: {
+  "x": 0,
+  "y": 0
+}
+
+07.08.2023_00:51:55.423500
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 21:51:55 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 0,
+  "result": 0
+}

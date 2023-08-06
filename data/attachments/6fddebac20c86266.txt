@@ -1,0 +1,24 @@
+07.08.2023_00:52:34.168971
+REQUEST: POST
+url: http://localhost:9999/api/remainder
+headers: null
+cookie: None
+data: None
+params: null
+json: {
+  "x": -1,
+  "y": 26
+}
+
+07.08.2023_00:52:36.225890
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 21:52:36 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 0,
+  "result": 25
+}

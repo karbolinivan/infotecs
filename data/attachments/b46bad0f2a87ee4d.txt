@@ -1,0 +1,5 @@
+APPLICATION
+stdout:
+stderr:
+usage: webcalculator.exe [-h] {start,stop,restart,show_log} ...
+webcalculator.exe: error: argument command: invalid choice: 'unknown' (choose from 'start', 'stop', 'restart', 'show_log')
