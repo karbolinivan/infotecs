@@ -19,9 +19,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Set Python encoding to UTF-8
+      - name: Set Python encoding to cp1252
         run: |
-          echo "PYTHONIOENCODING=utf-8" >> $GITHUB_ENV
+          echo "PYTHONIOENCODING=cp1252" >> $GITHUB_ENV
 
       - name: Install Python Dependencies
         run: |
