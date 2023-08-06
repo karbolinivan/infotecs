@@ -1,4 +1,4 @@
-[![Automation](https://github.com/karbolinivan/infotecs/actions/workflows/build.yml/build.svg)](https://karbolinivan.github.io/infotecs/)
+[![](https://img.shields.io/badge/allure-passed-green)](https://karbolinivan.github.io/infotecs/)
 # infotecs
 Automated testing of the API for the webcalculator application
 ## Tools
