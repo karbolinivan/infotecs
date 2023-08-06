@@ -26,7 +26,6 @@ jobs:
 
       - name: Start Web Calculator
         run: |
-          cd $GITHUB_WORKSPACE
           dir
           cmd /c .\webcalculator.exe start > output.txt
 
