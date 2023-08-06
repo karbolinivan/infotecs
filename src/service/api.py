@@ -20,32 +20,17 @@ class Webcalculator:
     def addition(self, payload: dict):
         return self.request.post(endpoint=Endpoints.ADDITION.value, json=payload)
 
-    # @allure.step('Adding with invalid keys: {payload}')
-    # def invalid_addition(self, payload: dict):
-    #     return self.request.post(endpoint=Endpoints.ADDITION.value, json=payload)
-
     @allure.step('Multiplication: {payload}')
     def multiplication(self, payload: dict):
         return self.request.post(endpoint=Endpoints.MULTIPLICATION.value, json=payload)
-
-    # @allure.step('Multiplication with invalid keys: {payload}')
-    # def invalid_multiplication(self, payload: dict):
-    #     return self.request.post(endpoint=Endpoints.MULTIPLICATION.value, json=payload)
 
     @allure.step('Division: {payload}')
     def division(self, payload: dict):
         return self.request.post(endpoint=Endpoints.DIVISION.value, json=payload)
 
-    # @allure.step('Floor division with invalid keys: {payload}')
-    # def invalid_division(self, payload: dict):
-    #     return self.request.post(endpoint=Endpoints.DIVISION.value, json=payload)
     @allure.step('Remainder: {payload}')
     def reminder(self, payload: dict):
         return self.request.post(endpoint=Endpoints.REMAINDER.value, json=payload)
-
-    # @allure.step('Remainder with invalid keys: {payload}')
-    # def invalid_reminder(self, payload: dict):
-    #     return self.request.post(endpoint=Endpoints.REMAINDER.value, json=payload)
 
     @allure.step("OPTIONS")
     def get_options(self):
