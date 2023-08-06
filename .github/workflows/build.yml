@@ -24,13 +24,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Set PYTHONIOENCODING to UTF-8
+      - name: Запуск Web Calculator
         run: |
-          echo ::set-env name=PYTHONIOENCODING::utf-8
-          echo PYTHONIOENCODING=utf-8 >> $GITHUB_ENV
-
-      - name: Start webcalculator
-        run: cmd /c "webcalculator.exe start"
+          cd $GITHUB_WORKSPACE
+          webcalculator.exe start > output.txt
 
 #      - name: Run Tests
 #        run: python -m pytest -s -v --alluredir=allure-results
