@@ -16,7 +16,7 @@ class Cases(Enum):
     X_N_INT_Y_ZERO = helper.get_numbers(x_type="N_INT", y_type="ZERO")
     X_ZERO_Y_N_INT = helper.get_numbers(x_type="ZERO", y_type="N_INT")
 
-    X_INT_D_Y_ZERO = helper.get_numbers(x_type="INT",y_type="ZERO"), Message.CALCULATION_ERROR, StatusCode.CALCULATION_ERROR
+    X_INT_D_Y_ZERO = helper.get_numbers(x_type="INT", y_type="ZERO"), Message.CALCULATION_ERROR, StatusCode.CALCULATION_ERROR
     X_ZERO_D_Y_ZERO = helper.get_numbers(x_type="ZERO", y_type="ZERO"), Message.CALCULATION_ERROR, StatusCode.CALCULATION_ERROR
     X_N_INT_D_Y_ZERO = helper.get_numbers(x_type="N_INT", y_type="ZERO"), Message.CALCULATION_ERROR, StatusCode.CALCULATION_ERROR
 
