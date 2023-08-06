@@ -75,5 +75,13 @@ class Log:
         self.message_response = message
         self._attach_all_message()
 
+    def save_app(self, result):
+        message = f'APPLICATION' \
+                  f'\nstdout:\n{result.stdout}' \
+                  f'stderr:\n{result.stderr}'
+
+        self.logger.info(msg=message)
+        allure.attach(message, name='Logs', attachment_type=allure.attachment_type.TEXT)
+
 
 log = Log()

@@ -1,6 +1,7 @@
 import subprocess
 import allure
 
+from src.base.logs import log
 from src.enums.paths import Path
 from src.service.settings import app_settings
 
@@ -32,22 +33,26 @@ class Build:
                 args.append(self._port)
 
         result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        log.save_app(result=result)
         return result
 
     @allure.step("Stop webcalculator")
     def down(self):
         args = ["cmd", "/c", self._file, "stop"]
         result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        log.save_app(result=result)
         return result
 
     @allure.step("Restart webcalculator")
     def restart(self):
         args = ["cmd", "/c", self._file, "restart"]
         result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        log.save_app(result=result)
         return result
 
     @allure.step("Command webcalculator {command}")
     def command(self, command: str):
         args = ["cmd", "/c", self._file, command]
         result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        log.save_app(result=result)
         return result
