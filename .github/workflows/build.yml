@@ -27,7 +27,7 @@ jobs:
       - name: Start Web Calculator
         run: |
           dir
-          & .\webcalculator.exe start
+          & .\webcalculator.exe start > output.txt
 
 #      - name: Run Tests
 #        run: python -m pytest -s -v --alluredir=allure-results
