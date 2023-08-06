@@ -14,17 +14,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+#      - name: Set up Python
+#        uses: actions/setup-python@v4
+#        with:
+#          python-version: '3.11'
+#
+#      - name: Install Python Dependencies
+#        run: |
+#          python -m pip install --upgrade pip
+#          pip install -r requirements.txt
 
-      - name: Install Python Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Restart webcalculator
+      - name: Start webcalculator
         run: ./webcalculator.exe start
 
 #      - name: Run Tests
