@@ -25,7 +25,7 @@ jobs:
 #          pip install -r requirements.txt
 
       - name: Start webcalculator
-        run: ./webcalculator.exe start
+        run: cmd /c "webcalculator.exe start"
 
 #      - name: Run Tests
 #        run: python -m pytest -s -v --alluredir=allure-results
