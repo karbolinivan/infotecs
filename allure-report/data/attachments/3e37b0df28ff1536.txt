@@ -1,0 +1,24 @@
+06.08.2023_17:42:04.344541
+REQUEST: POST
+url: http://localhost:9999/api/remainder
+headers: null
+cookie: None
+data: None
+params: null
+json: {
+  "x": 44,
+  "y": -89.52001810593755
+}
+
+06.08.2023_17:42:06.384067
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 14:42:06 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 3,
+  "statusMessage": "Значения параметров должны быть целыми"
+}

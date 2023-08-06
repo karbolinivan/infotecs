@@ -1,0 +1,24 @@
+06.08.2023_17:42:18.616858
+REQUEST: POST
+url: http://localhost:9999/api/remainder
+headers: null
+cookie: None
+data: None
+params: null
+json: {
+  "x": 99,
+  "y": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+}
+
+06.08.2023_17:42:20.654912
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 14:42:20 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 4,
+  "statusMessage": "Превышены максимальные значения параметров"
+}

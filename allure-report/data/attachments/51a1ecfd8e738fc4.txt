@@ -1,0 +1,24 @@
+06.08.2023_17:40:32.647252
+REQUEST: POST
+url: http://localhost:9999/api/addition
+headers: null
+cookie: None
+data: None
+params: null
+json: {
+  "x": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+  "y": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+}
+
+06.08.2023_17:40:34.683827
+RESPONSE
+status code: 200
+headers: {
+  "Server": "WebCalculator",
+  "Date": "Sun, 06 Aug 2023 14:40:34 GMT",
+  "Content-Type": "application/json"
+}
+json: {
+  "statusCode": 4,
+  "statusMessage": "Превышены максимальные значения параметров"
+}
