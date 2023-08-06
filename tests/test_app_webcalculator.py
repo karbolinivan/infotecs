@@ -2,7 +2,6 @@ import allure
 import pytest
 
 from src.base.assertions import assertion
-
 from src.enums.messages import AppMessage, App
 
 
@@ -76,6 +75,7 @@ class TestApplication:
 
     @allure.title("Checking the unknown command")
     @allure.description("Checking the unknown command")
+    @pytest.mark.negative
     def test_application_unknown(self, start_stop_webcalculator_app):
         app = start_stop_webcalculator_app
         command = app.command(command="unknown")

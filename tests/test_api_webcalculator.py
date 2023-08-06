@@ -29,7 +29,7 @@ class TestStateAPI:
     @allure.suite("Server")
     @allure.title("Checking for a invalid request")
     @allure.description("Checking for a invalid request")
-    @pytest.mark.smoke
+    @pytest.mark.negative
     def test_invalid_request(self):
         result = webcalculator.invalid()
         response = Response(response=result)
