@@ -14,11 +14,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Python
-      - uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-          cache: 'pip' # caching pip dependencies
 
       - name: Install Python Dependencies
         run: |
@@ -27,6 +26,7 @@ jobs:
 
       - name: Run Tests
         run: python -m pytest --alluredir=allure-results
+
 
       - name: Get Allure history
         uses: actions/checkout@v2
