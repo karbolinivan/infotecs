@@ -27,7 +27,10 @@ jobs:
       - name: Запуск Web Calculator
         run: |
           cd $GITHUB_WORKSPACE
-          webcalculator.exe start > output.txt
+        # Вывести содержимое текущей папки для проверки наличия webcalculator.exe
+          dir
+        # Выполнить webcalculator.exe и перенаправить вывод в файл output.txt
+          cmd /c webcalculator.exe start > output.txt
 
 #      - name: Run Tests
 #        run: python -m pytest -s -v --alluredir=allure-results
