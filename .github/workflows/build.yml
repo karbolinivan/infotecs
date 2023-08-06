@@ -25,11 +25,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Start Web Calculator
-        env:
-          PYTHONIOENCODING: utf-8
         run: |
           dir
-          cmd /c .\webcalculator.exe start > output.txt
+          & .\webcalculator.exe start
 
 #      - name: Run Tests
 #        run: python -m pytest -s -v --alluredir=allure-results
