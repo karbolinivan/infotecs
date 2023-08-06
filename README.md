@@ -1,39 +1,33 @@
-[![Automation](https://github.com/karbolinivan/infotecs/actions/workflows/Automation.yml/build.svg)](https://karbolinivan.github.io/infotecs/)
+[![Automation](https://github.com/karbolinivan/infotecs/actions/workflows/build.yml/build.svg)](https://karbolinivan.github.io/infotecs/)
 # infotecs
 Automated testing of the API for the webcalculator application
 ## Tools
 <img src="https://img.shields.io/badge/python-0d1117?style=for-the-badge&logo=python"><img src="https://img.shields.io/badge/pytest-0d1117?style=for-the-badge&logo=pytest"><img src="https://img.shields.io/badge/pydantic-0d1117?style=for-the-badge&logo=pydantic"><img src="https://img.shields.io/badge/postman-0d1117?style=for-the-badge&logo=postman"><img src="https://img.shields.io/badge/Actions-0d1117?style=for-the-badge&logo=githubactions"><img src="https://img.shields.io/badge/pycharm-0d1117?style=for-the-badge&logo=pycharm&logoColor=0"><img src="https://img.shields.io/badge/git-0d1117?style=for-the-badge&logo=git&logoColor=0"><img src="https://img.shields.io/badge/github-0d1117?style=for-the-badge&logo=github">
 
 ## Start project
-1. Generate Allure report:
-```
-pytest -s -v --alluredir=allure-results
-```
 
-2. Start allure report
-```
-allure serve allure-results
-```
-
-## Commands
-### Requirements 
-Installing environments for Linux:
-```
-python3 -m venv venv 
-source venv/bin/activate
-```
-
-Installing environments for Windows:
+1. Installing environments for Windows:
 ```
 python3 -m venv venv 
 venv/Scripts/activate
 ```
 
-Installing requirements:
+2. Installing requirements:
 ```
 pip3 install -r requirements.txt
 ```
 
+3. Generate Allure report:
+```
+pytest -s -v --alluredir=allure-results
+```
+
+4. Start allure report
+```
+allure serve allure-results
+```
+
+## Commands
 ### Allure
 Windows install Allure:
 ```
