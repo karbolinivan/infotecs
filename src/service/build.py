@@ -31,8 +31,6 @@ class Build:
             if self._port:
                 args.append(self._port)
 
-
-
         result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         return result
 
